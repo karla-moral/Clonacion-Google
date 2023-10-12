@@ -1,0 +1,279 @@
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+/*************************************************
+****************************************************
+*************************************************/
+/* Navegación */
+header {
+    /* width - ancho /// height-alto */
+    width: 100%;
+    height: 60px;
+}
+
+/* Acceder a nav a través de header */
+header nav {
+    display: flex;
+    /* Justificar hacia la derecha */
+    justify-content: flex-end;
+    /* background-color: aqua; */
+}
+
+header nav .nav-right-section {
+    /* width - ancho /// height-alto y el valor auto = altura automática*/
+    width: 250px;
+    height: auto;
+    /* Eliminar puntitos */
+    list-style:none;
+    display: flex;
+    /* Justificar al centro // de acorde al elemento */
+    justify-content: center;
+    /* Centrando verticalmente*/
+    align-items:center;
+}
+
+a {
+    text-decoration: none;
+}
+/* Anclas dentro del nav para agregar espacio */
+nav .nav-right-section a{
+    /* Color del texto */
+    color: rgba(0,0,0,.87);
+    margin-right: 20px;
+}
+/* Ícono del Menú */
+nav .nav-right-section .menu{
+    /* Ponemos imagen / vector */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* Que la imagen esté contenida en el elemento más grande */
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+/* Imagen del usuarix */
+nav .nav-right-section img{
+    /* Redondeado de bordes */
+    border-radius: 100%;
+    width: 35px;
+    margin-left: 20px
+}
+
+/* ***************************************
+******************************************
+**************************************** */
+/* MAIN */
+
+main{
+    margin-top: 150px;
+    /* centrar elementos */
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    margin-bottom: 40px;
+    /* MARGEN vertical // horizontal */
+    /* Centrado absoluto debiso a los margenes autom. */
+    margin: 0 auto;
+}
+
+main .main-logo img {
+    height: 120px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+    /* background-color: aquamarine; */
+}
+
+main .main-input input{
+    height: 35px;
+    border: none;
+    /* outline- quitar el contorno al accionar el click */
+    outline: none;
+    width: 450px;
+    /* background-color: aqua; */
+}
+/* Efecto hover(sombra) al poner el mouse sin accione */
+main .main-input-container:hover{
+    border-color:#dfe1e500;
+    /* 0-> desplaz. horizontal//
+       1px-> desplaz. vertical//
+       6px-> desenfoque       //
+       0-> expansion de la sombra */
+    box-shadow: 0 1px 6px 0 #20212447;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    background-position: center;
+    /* Prop. para que no se repita */
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    padding-left: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 14px;
+    height: 14px;
+    padding-left: 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: contain;
+    padding-right: 6%;
+    background-repeat: no-repeat;
+}
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /* incline // incline block los pone en una sola linea */
+    display: inline-block;
+} 
+
+main .main-buttons button {
+    border: 0;
+    height: 36px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    padding: 0 15px;
+    margin-left: 15px;
+    border: 1px solid #f8f9fa;
+}
+
+main .main-buttons button:hover{
+    box-shadow: 0 1px 1px 0 #20212447;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height:15;
+    background-color: rgb(242, 242, 242) ;
+    bottom: 0;
+    position: absolute;
+}
+
+footer .mexico{
+    color: rgb(112, 117, 122);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    height: 17px;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    padding-left: 15px; 
+    padding-right: 15px; 
+    padding-top: 15px;
+    margin-left: 15px;
+    border-bottom-color: rgb(218, 220, 224);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+footer .buttons-bajos{
+    width: 100%;
+    margin: auto;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    justify-content: space-between;
+    padding-bottom: 14px;
+}
+
+footer .buttons-bajos div{
+    /* background-color: #4f94c9; */
+    border: 0;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 220px;
+    height: 36px;  
+}
+
+div .buttons-bajos a {
+    text-decoration: none;
+    color: rgb(112, 117, 122);
+}
+
+div .nav-soporte a{
+    color: rgb(112, 117, 122);
+    margin: 12px;
+    padding:0;
+    /* text-align: start; *************************/
+}
+
+div .nav-privacidad a{
+    color: rgb(112, 117, 122);
+    margin: 12px;
+    padding:0px;
+    /* text-align:end; *************************/
+}
+
+div a:hover{
+    text-decoration: underline;
+}
+
+div .nav-soporte{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin:15px; 
+    margin-left: 0;
+    /*justify-content: space-evenly;*/
+    list-style:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    justify-content:start;
+    /* white-space: nowrap;  */
+    /* text-align: start; */
+}
+
+div .nav-privacidad{
+    display: flex;
+    list-style:none;
+    color: rgba(0,0,0,.87);
+    height: 16px;
+    margin:15px;
+    margin-left: 30px; 
+    margin-right: 0vh;
+    padding-right: 0;
+    white-space: nowrap; 
+    justify-content: end;
+    text-align: end;
+}
